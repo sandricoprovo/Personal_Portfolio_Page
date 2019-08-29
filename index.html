@@ -5,18 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="styles/styles.css" />
+		<style>
+				@media (max-width: 2000px) {
+					.welcome-section__name {
+						font-size: 5rem;
+						line-height: 60px;
+					}
+				}
+			</style>
 		<title>Sandrico Provo</title>
 	</head>
 	<body>
-		<main>
+		<main id="top">
 			<nav id="navbar">
-				<p>👨🏾‍💻</p>
+				<a href="#top">👨🏾‍💻</a>
 				<a class="navbar--link" href="#projects">Projects</a>
 				<a class="navbar--link" href="">About Me</a>
 				<a
 					class="navbar--link"
 					href="https://github.com/sandricoprovo"
 					id="profile-link"
+					target="_blank"
 					>Github</a
 				>
 			</nav>
@@ -29,14 +38,42 @@
 					</h3>
 				</div>
 			</div>
-			
 
-			<!-- <div id="projects"> -->
-				<!-- <div> -->
-					<!-- <h1 class="project--header">Item Counter</h1> -->
-					<!-- <p class="project--info">Text Here</p> -->
-				<!-- </div> -->
+			<div class="welcome__text">
+				<h1 class="welcome__message">Hello, and welcome!</h1>
 			</div>
+
+			<div class="projects__header">
+				<h1 class="header__text">My Projects</h1>
+			</div>
+
+			<section id="projects">
+				<div class="project-tile">
+					<h1 class="project__title">Item Counter</h1>
+					<p class="project__info">
+						Remember how people used to carry around those clicker counter when they need to track a running total? Well, this is your digital replacement!
+					</p>
+					<a class="project__link" href="https://codepen.io/sandricop/full/wZrBKP" target="_blank">Try it out!</a>
+					<img
+						class="project__img"
+						src="assets/images/Item_Counter.png"
+						alt=""
+					/>
+				</div>
+				<div class="project-tile">
+					<h1 class="project__title">RollADice</h1>
+					<p class="project__info">
+							RollADice is a simplistic, visually pleasing dice roller. Currently, you can roll between a one(1) and a six(6).
+					</p>
+					<a class="project__link" href="https://github.com/sandricoprovo/RollADice" target="_blank">Check out the Github page</a>
+					<img
+						class="project__img"
+						src="assets/images/Dice_Roller.png"
+						alt=""
+					/>
+				</div>
+				</div>
+			</section>
 		</main>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
